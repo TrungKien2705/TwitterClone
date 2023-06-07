@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import PostFeed from "@/components/posts/PostFeed";
 import UserHero from "@/components/user/UserHero";
 import Userio from "@/components/user/Userio";
 import useUser from "@/hook/useUser";
@@ -24,6 +25,7 @@ const UserView = () => {
       <Header label={fetchedUser?.name} showBackArrow />
       <UserHero userId={userId as string} />
       <Userio userId={userId as string} />
+      <PostFeed userId={userId as string} />
     </>
   );
 };

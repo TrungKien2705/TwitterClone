@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { Toaster } from "react-hot-toast";
 import { SessionProvider } from "next-auth/react";
 import type { AppProps } from "next/app";
+import EditMOdal from "@/components/modal/EditModal";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Toaster />
       <LoginModal />
       <RegisterModal />
+      <EditMOdal />
 
       <Layout>
         <Component {...pageProps} />

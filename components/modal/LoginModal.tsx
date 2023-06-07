@@ -57,7 +57,7 @@ const LoginModal = () => {
   const footerContent = (
     <div className="text-neutral-400 text-center mt-4">
       <p>
-        First tire using Twitter?{" "}
+        First tire using Pwitter?{" "}
         <span
           onClick={onToggele}
           className="text-white cursor-pointer hover:underline"
