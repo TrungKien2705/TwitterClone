@@ -3,7 +3,7 @@ import NotificationFeed from "@/components/NotificationFeed";
 import { NextPageContext } from "next";
 import { getSession } from "next-auth/react";
 
-export async function getInitialProps(context: NextPageContext) {
+export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
   if (!session) {
     return {
@@ -14,9 +14,7 @@ export async function getInitialProps(context: NextPageContext) {
     };
   }
   return {
-    props: {
-      session,
-    },
+    props: {},
   };
 }
 const notifications = () => {
